@@ -83,7 +83,7 @@ const timeOutId = setTimeout(openModal, 5000);
 
 
 // clock
-const deadline = '2022-01-10'
+let deadline = '2022-01-20'
 
 function getTimeRemaining(deadline) {
 	const t = new Date(deadline) - new Date(),
@@ -126,10 +126,10 @@ function setClock(parent, deadline) {
 			minutes.innerHTML = 0;
 			seconds.innerHTML = 0
 		} else {
-			days.innerHTML = makeZero(t.days);
-			hours.innerHTML = makeZero(t.hours);
-			minutes.innerHTML = makeZero(t.minutes);
-			seconds.innerHTML = makeZero(t.seconds);
+			days.innerHTML = addZero(t.days);
+			hours.innerHTML = addZero(t.hours);
+			minutes.innerHTML = addZero(t.minutes);
+			seconds.innerHTML = addZero(t.seconds);
 		}
 	}
 

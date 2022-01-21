@@ -10,4 +10,3 @@ btns.forEach(item => {
     })
 })
 
-const newBtn = 
